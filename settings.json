@@ -1,8 +1,9 @@
 {
-  "BOT_TOKEN": "get_me_from_@BotFather",
-  "CHANNEL_USERNAME": "@example",
-  "MESSAGE_ID": 0,
   "TIMEZONE": "Europe/Moscow",
+  "NODE_NAME": "Test node",
+  "INFLUX_HOST": "127.0.0.1",
+  "INFLUX_PORT": "8086",
+  "INFLUX_DB": "dlnr",
   "SERVERS": [
     {
       "ip": "46.201.233.44",

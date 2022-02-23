@@ -9,10 +9,11 @@ SETTINGS_PATH = 'settings.json'
 
 
 class Settings(BaseSettings):
-    BOT_TOKEN: str
-    CHANNEL_USERNAME: str
-    MESSAGE_ID: int
     TIMEZONE: str
+    NODE_NAME: str
+    INFLUX_HOST: str
+    INFLUX_PORT: int
+    INFLUX_DB: str
     SERVERS: List[Server]
 
     class Config:

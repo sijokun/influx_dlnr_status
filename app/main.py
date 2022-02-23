@@ -1,6 +1,6 @@
 import asyncio
 
-from bot import send_info_to_channel
+from monitoring import append_measurement
 from ping import ping_servers, pretty_output
 from settings import settings
 
@@ -8,8 +8,8 @@ from settings import settings
 async def main_loop():
     while True:
         results = await ping_servers(settings.SERVERS)
-        pretty_text = pretty_output(results)
-        await send_info_to_channel(pretty_text)
+        await append_measurement(results)
+        print(pretty_output(results))
         await asyncio.sleep(5)
 
 
