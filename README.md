@@ -15,8 +15,10 @@
     ```
 2. Заполнить `settings.json`
     ```json
-    "BOT_TOKEN": "get_me_from_@BotFather", 
-    "CHANNEL_USERNAME": "@example",
+     "NODE_NAME": "Test node",
+     "INFLUX_HOST": "127.0.0.1",
+     "INFLUX_PORT": "8086",
+     "INFLUX_DB": "dlnr"
     ```
 3. Запустить.
     ```shell
